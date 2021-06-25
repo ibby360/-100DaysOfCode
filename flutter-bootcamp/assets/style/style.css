@@ -14,10 +14,28 @@
     padding: 5px 40px;
     line-height: 38px;
     border-radius: 30px;
+    transition: 500ms linear; 
+}
+.btn-primary:hover {
+    transform: scale(1.05);
 }
 
 .btn-rounded {
     padding: 2px 30px;
     line-height: 32px;
     border-radius: 30px;
+    transition: 500ms linear; 
+}
+
+.btn-rounded:hover {
+    transform: scale(1.1);
+}
+
+.contact-card {
+    border: none;
+    border-radius: 1rem;
+}
+
+.input-ctl {
+    border: none;
 }
