@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="assets/style/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- MapBox -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
     <title>Flutter Bootcamp</title>
 </head>
 <body>
@@ -220,7 +224,49 @@
     </section>
     <!-- Instructors -->
 
+    <!-- Contact Info -->
+    <section class="mb-5">
+        <div class="container">
+            <div class="row g-4">
+                <h2 class="text-center mb-4">Contact Us</h2>
+                <div class="col-md">
+                    <div class="card p-3 bg-primary shadow contact-card">
+                        <div class="row g-3">
+                            <div class="col">
+                                <label for="Name" class="form-label text-light">Name</label>
+                                <input type="text" class="form-control input-ctl" placeholder="Your name" aria-label="Your name" required>
+                            </div>
+                            <div class="col">
+                                <label for="" class="form-label text-light">Email</label>
+                                <input type="email" class="form-control input-ctl" placeholder="Email" aria-label="Email" required>
+                            </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <label for="" class="form-label text-light">Message</label>
+                                <textarea name="message" id="Message input-ctl" class="form-control" rows="4" cols="40" placeholder="Your Message"></textarea>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-rounded bg-dark text-light w-25">Submit</button>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14467.96553075918!2d39.22615969986506!3d-6.7514370943986926!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4bae169bd6f1%3A0x940f6b26a086a1dd!2sDar%20es%20Salaam!5e0!3m2!1sen!2stz!4v1624652830176!5m2!1sen!2stz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
 
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3 position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2021 Flutter Bootcamp</p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-3">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
