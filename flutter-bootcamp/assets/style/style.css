@@ -1,0 +1,23 @@
+@media (min-width:768px) {
+    body::before {
+        display: block;
+        content: "";
+        height: 60px;
+    }
+    
+    .news-input {
+        width: 50%;
+    }
+}
+
+.btn-primary {
+    padding: 5px 40px;
+    line-height: 38px;
+    border-radius: 30px;
+}
+
+.btn-rounded {
+    padding: 2px 30px;
+    line-height: 32px;
+    border-radius: 30px;
+}
