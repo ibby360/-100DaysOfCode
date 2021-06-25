@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="assets/style/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <title>Bootcamp</title>
+
+    <!-- MapBox -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
+    <title>Flutter Bootcamp</title>
 </head>
 <body>
     <!-- Navbar Start -->
@@ -28,6 +32,9 @@
                     <li class="nav-item">
                         <a href="#instructors" class="nav-link">Instructors</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="#contact_us" class="nav-link">Contact Us</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -43,7 +50,7 @@
                     <p class="lead my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                          Obcaecati aperiam aspernatur distinctio perspiciatis tempore quod hic,
                          necessitatibus culpa reiciendis officia.</p>
-                    <button class="btn btn-primary btn-lg">Start The Enrollment</button>
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Start The Enrollment</button>
                 </div>
                 <img class="img-fluid w-50 d-none d-sm-block" src="assets/img/developer.svg" alt="" srcset="">
             </div>
@@ -117,7 +124,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-md">
-                    <img src="assets/img/flutter.svg" alt="" srcset="" class="img-fluid">
+                    <img src="assets/img/mobile_development_8gyo.svg" alt="" srcset="" class="img-fluid">
                 </div>
                 <div class="col-md p-5">
                     <h2>Learn The Fundamental</h2>
@@ -146,15 +153,165 @@
                     <a href="#" class="btn btn-light btn-rounded mt-3"><i class="bi bi-chevron-right"></i> Read More</a>
                 </div>
                 <div class="col-md">
-                    <img src="assets/img/mobile_development_8gyo.svg" alt="" srcset="" class="img-fluid">
+                    <img src="assets/img/flutter.svg" alt="" srcset="" class="img-fluid">
                 </div>
             </div>
         </div>
     </section>
     <!-- Lean -->
 
+    <!-- Instructors -->
+    <section id="instructors" class="p-5">
+        <div class="container">
+            <h2 class="text-center">Our Instructors</h2>
+            <p class="lead text-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, dignissimos.</p>
+            <div class="row g-4">
+                <!-- Instracor one -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <img class="rounded-circle mb-3" src="https://randomuser.me/api/portraits/men/10.jpg" alt="">
+                            <h3 class="card-title mb-3">John Doe</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vel excepturi iste illum eos maiores tempora iure. Aut, iste sunt.</p>
+                            <a href="" class="i bi bi-twitter text-dark mx-1"></a>
+                            <a href="" class="i bi bi-linkedin text-dark mx-1"></a>
+                            <a href="" class="i bi bi-instagram text-dark mx-1"></a>
+                            <a href="" class="i bi bi-facebook text-dark mx-1"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Instracor Two -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <img class="rounded-circle mb-3" src="https://randomuser.me/api/portraits/men/11.jpg" alt="">
+                            <h3 class="card-title mb-3">Sam Smith</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vel excepturi iste illum eos maiores tempora iure. Aut, iste sunt.</p>
+                            <a href="" class="i bi bi-twitter text-dark mx-1"></a>
+                            <a href="" class="i bi bi-linkedin text-dark mx-1"></a>
+                            <a href="" class="i bi bi-instagram text-dark mx-1"></a>
+                            <a href="" class="i bi bi-facebook text-dark mx-1"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Instracor Three -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <img class="rounded-circle mb-3" src="https://randomuser.me/api/portraits/men/13.jpg" alt="">
+                            <h3 class="card-title mb-3">Shakur Shakur</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vel excepturi iste illum eos maiores tempora iure. Aut, iste sunt.</p>
+                            <a href="" class="i bi bi-twitter text-dark mx-1"></a>
+                            <a href="" class="i bi bi-linkedin text-dark mx-1"></a>
+                            <a href="" class="i bi bi-instagram text-dark mx-1"></a>
+                            <a href="" class="i bi bi-facebook text-dark mx-1"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Instracor Four -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <img class="rounded-circle mb-3" src="https://randomuser.me/api/portraits/women/10.jpg" alt="">
+                            <h3 class="card-title mb-3">Salah Monroe</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vel excepturi iste illum eos maiores tempora iure. Aut, iste sunt.</p>
+                            <a href="" class="i bi bi-twitter text-dark mx-1"></a>
+                            <a href="" class="i bi bi-linkedin text-dark mx-1"></a>
+                            <a href="" class="i bi bi-instagram text-dark mx-1"></a>
+                            <a href="" class="i bi bi-facebook text-dark mx-1"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Instructors -->
+
+    <!-- Contact Info -->
+    <section class="mb-5" id="contact_us">
+        <div class="container">
+            <div class="row g-4">
+                <h2 class="text-center mb-4">Contact Us</h2>
+                <div class="col-md">
+                    <div class="card p-3 bg-primary shadow contact-card">
+                        <form action="">
+                            <div class="row g-3">
+                                <div class="col">
+                                    <label for="Name" class="form-label text-light">Name</label>
+                                    <input type="text" class="form-control input-ctl" placeholder="Your name" aria-label="Your name" required>
+                                </div>
+                                <div class="col">
+                                    <label for="" class="form-label text-light">Email</label>
+                                    <input type="email" class="form-control input-ctl" placeholder="Email" aria-label="Email" required>
+                                </div>
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <label for="" class="form-label text-light">Message</label>
+                                    <textarea name="message" id="Message input-ctl" class="form-control" rows="4" cols="40" placeholder="Your Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="text-center"><button type="submit" value="submit" class="btn btn-rounded bg-light text-dark w-50">Submit</button></div>
+                        </form>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md d-none d-md-block">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7923.920606349208!2d39.22145108846483!3d-6.774686331338754!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4bae169bd6f1%3A0x940f6b26a086a1dd!2sDar%20es%20Salaam!5e0!3m2!1sen!2stz!4v1624656546472!5m2!1sen!2stz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div id="map">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
 
 
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3 position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2021 Flutter Bootcamp</p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-3">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <!-- Modal -->
+<div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="enrollLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+              <div class="mb-3">
+                  <label for="firts-name" class="col-form-label">First Name</label>
+                  <input type="text" class="form-control" id="first-name">
+              </div>
+              <div class="mb-3">
+                  <label for="last-name" class="col-form-label">Last Name</label>
+                  <input type="text" class="form-control" id="last-name">
+              </div>
+              <div class="mb-3">
+                  <label for="email" class="col-form-label">Email</label>
+                  <input type="email" class="form-control" id="email">
+              </div>
+              <div class="mb-3">
+                  <label for="phone-number" class="col-form-label">Phone Number</label>
+                  <input type="tel" class="form-control" id="phone-number">
+              </div>
+          </form>
+        </div>
+        <div class="modal-footer pt-3">
+          <button type="button" class="btn btn-rounded bg-primary text-light">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
